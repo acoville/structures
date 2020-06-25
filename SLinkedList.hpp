@@ -15,6 +15,7 @@
 #define SLL_HPP
 
 #include <functional>
+#include "SLLNode.hpp"
 
 namespace structures
 {
@@ -23,11 +24,33 @@ namespace structures
     {
         int size = 0;
         bool empty = true;
+        SLLNode<T> *start;
+        SLLNode<T> *tail;
+        SLLNode<T> *head;
 
         //================================================================
 
         public:
-        
+
+        /*---------------------------------------------
+
+            I'm not sure why, but the default
+            constructor was implicitly deleted
+
+            Ah, I think it was beacuse of the nodes,
+            which do not have default constructors. 
+            Maybe now that I've made them pointers
+            that will work?
+
+        ---------------------------------------------*/
+
+        SLinkedList()
+        {
+
+        }
+
+        //================================================================
+
         int Size() const
         {
             return size;
@@ -44,7 +67,7 @@ namespace structures
 
         void Insert(T arg) 
         {
-            
+
 
             size++;
 
@@ -73,7 +96,10 @@ namespace structures
 
         //==============================================================
 
+        bool Find(T arg, SLLNode<T> out)
+        {
 
+        }
     };
 }
 

@@ -1,3 +1,5 @@
+add_test( [==[New Node is a tail node]==] /home/acoville/Desktop/structures/test/build/structures_unit_test [==[New Node is a tail node]==])
+set_tests_properties( [==[New Node is a tail node]==] PROPERTIES WORKING_DIRECTORY /home/acoville/Desktop/structures/test/build)
 add_test( [==[Empty list has a size of 0]==] /home/acoville/Desktop/structures/test/build/structures_unit_test [==[Empty list has a size of 0]==])
 set_tests_properties( [==[Empty list has a size of 0]==] PROPERTIES WORKING_DIRECTORY /home/acoville/Desktop/structures/test/build)
 add_test( [==[Inserting increments size]==] /home/acoville/Desktop/structures/test/build/structures_unit_test [==[Inserting increments size]==])
@@ -10,4 +12,4 @@ add_test( [==[Inserting one element makes the list not empty]==] /home/acoville/
 set_tests_properties( [==[Inserting one element makes the list not empty]==] PROPERTIES WORKING_DIRECTORY /home/acoville/Desktop/structures/test/build)
 add_test( [==[Deleting a list with one element makes it empty]==] /home/acoville/Desktop/structures/test/build/structures_unit_test [==[Deleting a list with one element makes it empty]==])
 set_tests_properties( [==[Deleting a list with one element makes it empty]==] PROPERTIES WORKING_DIRECTORY /home/acoville/Desktop/structures/test/build)
-set( structures_unit_test_TESTS [==[Empty list has a size of 0]==] [==[Inserting increments size]==] [==[Deleting decrements size when size > 0]==] [==[Default constructed List is Empty]==] [==[Inserting one element makes the list not empty]==] [==[Deleting a list with one element makes it empty]==])
+set( structures_unit_test_TESTS [==[New Node is a tail node]==] [==[Empty list has a size of 0]==] [==[Inserting increments size]==] [==[Deleting decrements size when size > 0]==] [==[Default constructed List is Empty]==] [==[Inserting one element makes the list not empty]==] [==[Deleting a list with one element makes it empty]==])

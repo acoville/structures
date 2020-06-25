@@ -498,6 +498,33 @@ ExperimentalStart/fast:
 	$(MAKE) -f CMakeFiles/ExperimentalStart.dir/build.make CMakeFiles/ExperimentalStart.dir/build
 .PHONY : ExperimentalStart/fast
 
+test/SLLNodeTest.o: test/SLLNodeTest.cpp.o
+
+.PHONY : test/SLLNodeTest.o
+
+# target to build an object file
+test/SLLNodeTest.cpp.o:
+	$(MAKE) -f CMakeFiles/structures_unit_test.dir/build.make CMakeFiles/structures_unit_test.dir/test/SLLNodeTest.cpp.o
+.PHONY : test/SLLNodeTest.cpp.o
+
+test/SLLNodeTest.i: test/SLLNodeTest.cpp.i
+
+.PHONY : test/SLLNodeTest.i
+
+# target to preprocess a source file
+test/SLLNodeTest.cpp.i:
+	$(MAKE) -f CMakeFiles/structures_unit_test.dir/build.make CMakeFiles/structures_unit_test.dir/test/SLLNodeTest.cpp.i
+.PHONY : test/SLLNodeTest.cpp.i
+
+test/SLLNodeTest.s: test/SLLNodeTest.cpp.s
+
+.PHONY : test/SLLNodeTest.s
+
+# target to generate assembly for a file
+test/SLLNodeTest.cpp.s:
+	$(MAKE) -f CMakeFiles/structures_unit_test.dir/build.make CMakeFiles/structures_unit_test.dir/test/SLLNodeTest.cpp.s
+.PHONY : test/SLLNodeTest.cpp.s
+
 test/SLLTest.o: test/SLLTest.cpp.o
 
 .PHONY : test/SLLTest.o
@@ -590,6 +617,9 @@ help:
 	@echo "... Nightly"
 	@echo "... NightlyConfigure"
 	@echo "... ExperimentalStart"
+	@echo "... test/SLLNodeTest.o"
+	@echo "... test/SLLNodeTest.i"
+	@echo "... test/SLLNodeTest.s"
 	@echo "... test/SLLTest.o"
 	@echo "... test/SLLTest.i"
 	@echo "... test/SLLTest.s"
