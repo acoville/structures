@@ -19,7 +19,16 @@ namespace structures
     template <typename T>
     class SLLNode
     {
-        
+        T data;
+        SLLNode *next;
+        bool tail;
+
+        public:
+
+        T& Data() const;
+        T& Data();
+
+        SLLNode &Next();
     };
 }
 

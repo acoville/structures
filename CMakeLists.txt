@@ -12,6 +12,7 @@ find_package(Catch2 REQUIRED)
 
 add_executable(structures_unit_test
                 test/testrunner.cpp
+                test/SLLNodeTest.cpp
                 test/SLLTest.cpp)
 
 target_link_libraries(structures_unit_test Catch2::Catch2)

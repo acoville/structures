@@ -21,11 +21,57 @@ namespace structures
     template <typename T, class invariant = std::less<T>>
     class SLinkedList
     {
+        int size = 0;
+        bool empty = true;
+
+        //================================================================
+
+        public:
         
+        int Size() const
+        {
+            return size;
+        }
+
+        //================================================================
+
+        bool Empty() const
+        {
+            return empty;
+        }
+
+        //================================================================
+
+        void Insert(T arg) 
+        {
+            
+
+            size++;
+
+            if(empty)
+                empty = false;
+        }
+
+        //===============================================================
+
+        void Delete(T arg)
+        {
 
 
-        //--------------------------------------------------
+            if(size > 0)
+            {
+                size--;
+            }
+            else
+            {
+                // throw exception?
+            }
 
+            if(size == 0)
+                empty = true;
+        }
+
+        //==============================================================
 
 
     };
@@ -36,4 +82,4 @@ namespace structures
 
 
 
-#endif;
+#endif
