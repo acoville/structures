@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/home/acoville/Desktop/structures/SLinkedList.hpp
+functional
+-
+
+/home/acoville/Desktop/structures/test/SLLTest.cpp
+include/catch.hpp
+/home/acoville/Desktop/structures/test/include/catch.hpp
+../SLinkedList.hpp
+/home/acoville/Desktop/structures/SLinkedList.hpp
+
 /home/acoville/Desktop/structures/test/include/catch.hpp
 TargetConditionals.h
 -
@@ -575,8 +585,4 @@ algorithm
 -
 cassert
 -
-
-/home/acoville/Desktop/structures/test/testrunner.cpp
-include/catch.hpp
-/home/acoville/Desktop/structures/test/include/catch.hpp
 
