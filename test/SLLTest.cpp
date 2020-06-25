@@ -10,6 +10,8 @@
 
 namespace structures::test
 {
+    //===========================================================================
+
     TEST_CASE("Empty list has a size of 0", "[Singly Linked List]")
     {
         auto t = SLinkedList<int>();
@@ -77,5 +79,27 @@ namespace structures::test
         bool empty = t.Empty();
 
         REQUIRE(empty);
+    }
+
+    //===============================================================================
+
+    TEST_CASE("Find -readonly returns F if the value is not found", "[Singly Linked List]")
+    {
+        auto t = SLinkedList<int>();
+        t.Insert(5);
+
+        bool found = t.Find(7);
+        REQUIRE(!found);
+    }
+
+    //================================================================================
+
+    TEST_CASE("Find -readonly returns T if value is found", "[Singly Linked List]")
+    {
+        auto t = SLinkedList<int>();
+        t.Insert(5);
+
+        bool found = t.Find(5);
+        REQUIRE(found);
     }
 }

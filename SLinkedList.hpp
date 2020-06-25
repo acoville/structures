@@ -32,23 +32,6 @@ namespace structures
 
         public:
 
-        /*---------------------------------------------
-
-            I'm not sure why, but the default
-            constructor was implicitly deleted
-
-            Ah, I think it was beacuse of the nodes,
-            which do not have default constructors. 
-            Maybe now that I've made them pointers
-            that will work?
-
-        ---------------------------------------------*/
-
-        SLinkedList()
-        {
-
-        }
-
         //================================================================
 
         int Size() const
@@ -96,9 +79,39 @@ namespace structures
 
         //==============================================================
 
+        /*----------------------------------------
+
+            This version of Find is for use cases
+            where you only want to know weather 
+            the result is in this list and do not
+            want a pointer to it 
+
+            I guess you could call this a read-only 
+            find?
+
+        -----------------------------------------*/
+
+        bool Find(T arg) const
+        {
+            return false;
+        }
+
+        //==============================================================
+
+        /*----------------------------------------
+
+            This version of Find is for cases
+            where you want to see if the value is 
+            in the list and want a handle on that 
+            node to manipulate.
+
+            read-write find
+
+        -----------------------------------------*/
+
         bool Find(T arg, SLLNode<T> out)
         {
-
+            return false;
         }
     };
 }
