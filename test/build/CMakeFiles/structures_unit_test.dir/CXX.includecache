@@ -8,17 +8,11 @@
 
 /home/acoville/Desktop/structures/SLLNode.hpp
 
-/home/acoville/Desktop/structures/SLinkedList.hpp
-functional
--
-SLLNode.hpp
-/home/acoville/Desktop/structures/SLLNode.hpp
-
-/home/acoville/Desktop/structures/test/SLLTest.cpp
+/home/acoville/Desktop/structures/test/SLLNodeTest.cpp
 include/catch.hpp
 /home/acoville/Desktop/structures/test/include/catch.hpp
-../SLinkedList.hpp
-/home/acoville/Desktop/structures/SLinkedList.hpp
+../SLLNode.hpp
+/home/acoville/Desktop/structures/SLLNode.hpp
 
 /home/acoville/Desktop/structures/test/include/catch.hpp
 TargetConditionals.h

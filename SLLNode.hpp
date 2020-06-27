@@ -48,14 +48,14 @@ namespace structures
 
         SLLNode(T arg)
         {
-
+            data = arg;
         }
         
         //===============================================================
 
         T& Data()
         {
-
+            return &data;
         }
 
         //===============================================================
@@ -82,6 +82,38 @@ namespace structures
             {
                 // throw exception?
             }       
+        }
+
+        //================================================================
+
+        /*----------------------------------------
+
+            Boolean comparison operators
+
+
+
+        -----------------------------------------*/
+
+        bool operator < (const SLLNode &other) const
+        {
+            //return (*this < other ? true : false);
+
+            T data1 = this->data;
+            T data2 = other.data;
+
+            return data1 < data2 ? true : false;
+        }
+
+        //----------------------------------------------
+
+        bool operator > (const SLLNode &other) const
+        {
+            //return (*this > other ? true : false);
+
+            T data1 = this->data;
+            T data2 = other.data;
+
+            return data1 > data2 ? true : false;
         }
     };
 }

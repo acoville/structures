@@ -13,4 +13,52 @@ namespace structures::test
 
         REQUIRE(tail);
     }
+
+    //=========================================================================
+
+    TEST_CASE("Operator < test T", "[SLLNode]")
+    {
+        auto n1 = SLLNode<int>(5);
+        auto n2 = SLLNode<int>(7);
+
+        bool result = n1 < n2;
+
+        REQUIRE(result);
+    }
+
+    //-----------------------------------------------
+
+    TEST_CASE("Operator < test F", "[SLLNode]")
+    {
+        auto n1 = SLLNode<int>(7);
+        auto n2 = SLLNode<int>(5);
+
+        bool result = n1 < n2;
+
+        REQUIRE(!result);       
+    }
+
+    //===========================================================================
+
+    TEST_CASE("Operator > test T", "[SLLNode]")
+    {
+        auto n1 = SLLNode<int>(7);
+        auto n2 = SLLNode<int>(5);
+
+        bool result = n1 > n2;
+
+        REQUIRE(result);
+    }
+
+    //----------------------------------------------------
+
+    TEST_CASE("Operator > test F", "[SLLNode]")
+    {
+        auto n1 = SLLNode<int>(5);
+        auto n2 = SLLNode<int>(7);
+
+        bool result = n1 > n2;
+
+        REQUIRE(!result);
+    }
 }

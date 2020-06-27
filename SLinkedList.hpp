@@ -50,12 +50,37 @@ namespace structures
 
         void Insert(T arg) 
         {
+            switch(size)
+            {
+                case(0):
+                {
+                    start = new SLLNode<T>(arg);
 
+                    break;
+                }
+
+                //-------------------------------------------
+
+                default:
+                {
+                    
+                }
+            }
 
             size++;
 
             if(empty)
                 empty = false;
+        }
+
+        //===============================================================
+
+        virtual ~SLinkedList()
+        {
+            if(start)
+            {
+                delete start;
+            }
         }
 
         //===============================================================
@@ -79,7 +104,7 @@ namespace structures
 
         //==============================================================
 
-        /*----------------------------------------
+        /*--------------------------------------------
 
             This version of Find is for use cases
             where you only want to know weather 
@@ -89,7 +114,7 @@ namespace structures
             I guess you could call this a read-only 
             find?
 
-        -----------------------------------------*/
+        --------------------------------------------*/
 
         bool Find(T arg) const
         {
@@ -98,7 +123,7 @@ namespace structures
 
         //==============================================================
 
-        /*----------------------------------------
+        /*--------------------------------------------
 
             This version of Find is for cases
             where you want to see if the value is 
@@ -107,7 +132,7 @@ namespace structures
 
             read-write find
 
-        -----------------------------------------*/
+        ---------------------------------------------*/
 
         bool Find(T arg, SLLNode<T> out)
         {
