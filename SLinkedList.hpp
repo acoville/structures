@@ -63,7 +63,35 @@ namespace structures
 
                 default:
                 {
-                    
+                    /*
+
+                    head = start;
+
+                    BEGIN:
+
+                    if(arg > *head)
+                    {
+                        // is there a node after this? 
+
+                        if(head->Tail())
+                        {
+                            // no? Then add to the end of this node
+
+                            head->next = new SLLNode<T>(arg);
+
+                        }
+
+                        else
+                        {
+                            // yes? Then see if 
+                        }
+                        
+                    }
+
+                    END:
+                    */
+
+                    break;
                 }
             }
 
@@ -116,8 +144,29 @@ namespace structures
 
         --------------------------------------------*/
 
-        bool Find(T arg) const
+        bool Find(T arg)
         {
+            head = start;
+
+            BEGIN:
+
+            if(*head == arg)
+            {
+                return true;
+            }
+            else
+            {
+                if(head->Tail())
+                {
+                    return false;
+                }
+                else
+                {
+                    head = &head->Next();
+                    goto BEGIN;
+                }
+            }
+
             return false;
         }
 

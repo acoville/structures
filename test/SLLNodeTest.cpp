@@ -61,4 +61,50 @@ namespace structures::test
 
         REQUIRE(!result);
     }
+
+    //=========================================================================
+
+    TEST_CASE("Operator < type T test, T", "[SLLNode]")
+    {
+        auto n1 = SLLNode<int>(5);
+
+        bool result = n1 < 7;
+
+        REQUIRE(result);
+    }
+
+    //-----------------------------------------------
+
+    TEST_CASE("Operator < type T test, F", "[SLLNode]")
+    {
+        auto n1 = SLLNode<int>(7);
+
+        bool result = n1 < 5;
+
+        REQUIRE(!result);       
+    }
+
+    //===========================================================================
+
+    TEST_CASE("Operator > type T test, T", "[SLLNode]")
+    {
+        auto n1 = SLLNode<int>(7);
+
+        bool result = n1 > 5;
+
+        REQUIRE(result);
+    }
+
+    //----------------------------------------------------
+
+    TEST_CASE("Operator > type T test, F", "[SLLNode]")
+    {
+        auto n1 = SLLNode<int>(5);
+
+        bool result = n1 > 7;
+
+        REQUIRE(!result);
+    }
+
+       
 }

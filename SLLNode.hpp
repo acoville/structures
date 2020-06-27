@@ -19,6 +19,8 @@ namespace structures
     template <typename T>
     class SLLNode
     {
+        //friend class SLinkedList<T>;
+
         T data;
         SLLNode *next;
         bool tail = true;
@@ -76,13 +78,23 @@ namespace structures
         {
             if(!tail)
             {
-                return next;
+                return *next;
             }
             else
             {
                 // throw exception?
             }       
         }
+
+        //================================================================
+
+        /*-----------------------------------------
+
+            Function to add a new child node
+            to this node
+
+        -----------------------------------------*/
+
 
         //================================================================
 
@@ -114,6 +126,48 @@ namespace structures
             T data2 = other.data;
 
             return data1 > data2 ? true : false;
+        }
+
+        //====================================================================
+
+        /*-----------------------------------------
+
+            Now I want comparison operators against
+            objects of type T
+
+        -----------------------------------------*/
+
+        bool operator < (const T &arg) const
+        {
+            return data < arg ? true : false;
+        }
+
+        //----------------------------------------
+
+        bool operator > (const T &arg) const
+        {
+            return data > arg ? true : false;
+        }
+
+        //=====================================================================
+
+        /*-----------------------------------------
+
+            Equality, Inequality operators
+            for type T 
+
+        ------------------------------------------*/
+
+        bool operator == (const T &arg)
+        {
+            return (data == arg) ? true : false;
+        }
+
+        //---------------------------------------
+
+        bool operator != (const T &arg)
+        {
+            return (data != arg) ? true : false;
         }
     };
 }
