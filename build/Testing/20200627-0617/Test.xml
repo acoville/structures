@@ -21,11 +21,11 @@
 	TotalVirtualMemory="2047"
 	TotalPhysicalMemory="15816"
 	LogicalProcessorsPerPhysical="2"
-	ProcessorClockFrequency="2995.78"
+	ProcessorClockFrequency="2704.04"
 	>
 	<Testing>
-		<StartDateTime>Jun 27 15:47 ACST</StartDateTime>
-		<StartTestTime>1593238674</StartTestTime>
+		<StartDateTime>Jun 27 20:12 ACST</StartDateTime>
+		<StartTestTime>1593254540</StartTestTime>
 		<TestList>
 			<Test>./New_Node_is_a_tail_node</Test>
 			<Test>./Operator_&lt;_test_T</Test>
@@ -34,9 +34,13 @@
 			<Test>./Operator_&gt;_test_F</Test>
 			<Test>./Operator_&lt;_type_T_test,_T</Test>
 			<Test>./Operator_&lt;_type_T_test,_F</Test>
-			<Test>./Operator_&gt;_type_T_test,_T</Test>
-			<Test>./Empty_list_has_a_size_of_0</Test>
 			<Test>./Operator_&gt;_type_T_test,_F</Test>
+			<Test>./Operator_&gt;_type_T_test,_T</Test>
+			<Test>./Operator_&gt;=_type_T_test,_T</Test>
+			<Test>./Operator_&gt;=_type_T_test,_F</Test>
+			<Test>./Operator_&lt;=_type_T_test,_T</Test>
+			<Test>./Operator_&lt;=_type_T_test,_F</Test>
+			<Test>./Empty_list_has_a_size_of_0</Test>
 			<Test>./Inserting_increments_size</Test>
 			<Test>./Deleting_decrements_size_when_size_&gt;_0</Test>
 			<Test>./Default_constructed_List_is_Empty</Test>
@@ -52,7 +56,7 @@
 			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "New Node is a tail node"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.017237</Value>
+					<Value>0.0116842</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -75,7 +79,7 @@
 			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Operator &lt; test T"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0237663</Value>
+					<Value>0.0135259</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -98,7 +102,7 @@
 			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Operator &lt; test F"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0243839</Value>
+					<Value>0.0142005</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -121,7 +125,7 @@
 			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Operator &gt; test T"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0250037</Value>
+					<Value>0.0158719</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -144,7 +148,7 @@
 			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Operator &gt; test F"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0223839</Value>
+					<Value>0.0174935</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -167,7 +171,7 @@
 			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Operator &lt; type T test\, T"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0243405</Value>
+					<Value>0.0218319</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -190,7 +194,7 @@
 			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Operator &lt; type T test\, F"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0243663</Value>
+					<Value>0.025625</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -207,59 +211,13 @@
 			</Results>
 		</Test>
 		<Test Status="passed">
-			<Name>Operator &gt; type T test, T</Name>
-			<Path>.</Path>
-			<FullName>./Operator_&gt;_type_T_test,_T</FullName>
-			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Operator &gt; type T test\, T"</FullCommandLine>
-			<Results>
-				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0244209</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="numeric/double" name="Processors">
-					<Value>1</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Completion Status">
-					<Value>Completed</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Command Line">
-					<Value>/home/acoville/Desktop/structures/build/structures_unit_test "Operator &gt; type T test\, T"</Value>
-				</NamedMeasurement>
-				<Measurement>
-					<Value encoding="base64" compression="gzip">eJxzy8wpSS0qtlLwL0gtSizJL1KwUyipLEhVCFEoSS0uidFRCOHyywezFZITi1OLFXITS5IzUlMU1HHoUMelPkSdy5a6AGZTsUJRYh4XFwAJvTyA====</Value>
-				</Measurement>
-			</Results>
-		</Test>
-		<Test Status="passed">
-			<Name>Empty list has a size of 0</Name>
-			<Path>.</Path>
-			<FullName>./Empty_list_has_a_size_of_0</FullName>
-			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Empty list has a size of 0"</FullCommandLine>
-			<Results>
-				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0214201</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="numeric/double" name="Processors">
-					<Value>1</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Completion Status">
-					<Value>Completed</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Command Line">
-					<Value>/home/acoville/Desktop/structures/build/structures_unit_test "Empty list has a size of 0"</Value>
-				</NamedMeasurement>
-				<Measurement>
-					<Value encoding="base64" compression="gzip">eJytyTEKgDAQRNE+p5hSO20FCwu9x6IrLsQkZLbR04uewV89+ItF18oB81n8QjQ6DiEEtFuRd3Rh/LcwxQhXOlGE1A1NjxfVLSdYQv9trEJtQ3gA+2AuoQ==</Value>
-				</Measurement>
-			</Results>
-		</Test>
-		<Test Status="passed">
 			<Name>Operator &gt; type T test, F</Name>
 			<Path>.</Path>
 			<FullName>./Operator_&gt;_type_T_test,_F</FullName>
 			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Operator &gt; type T test\, F"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0225962</Value>
+					<Value>0.0243645</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -276,13 +234,151 @@
 			</Results>
 		</Test>
 		<Test Status="passed">
+			<Name>Operator &gt; type T test, T</Name>
+			<Path>.</Path>
+			<FullName>./Operator_&gt;_type_T_test,_T</FullName>
+			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Operator &gt; type T test\, T"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0257398</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/acoville/Desktop/structures/build/structures_unit_test "Operator &gt; type T test\, T"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJxzy8wpSS0qtlLwL0gtSizJL1KwUyipLEhVCFEoSS0uidFRCOHyywezFZITi1OLFXITS5IzUlMU1HHoUMelPkSdy5a6AGZTsUJRYh4XFwAJvTyA====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Operator &gt;= type T test, T</Name>
+			<Path>.</Path>
+			<FullName>./Operator_&gt;=_type_T_test,_T</FullName>
+			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Operator &gt;= type T test\, T"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0232567</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/acoville/Desktop/structures/build/structures_unit_test "Operator &gt;= type T test\, T"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJxzy8wpSS0qtlLwL0gtSizJL1Kws1UoqSxIVQhRKEktLonRUQjh8ssHsxWSE4tTixVyE0uSM1JTFNRxaVHHpSFEncuWugBmU7FCUWIeFxcAdV88+g==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Operator &gt;= type T test, F</Name>
+			<Path>.</Path>
+			<FullName>./Operator_&gt;=_type_T_test,_F</FullName>
+			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Operator &gt;= type T test\, F"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0209571</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/acoville/Desktop/structures/build/structures_unit_test "Operator &gt;= type T test\, F"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJxzy8wpSS0qtlLwL0gtSizJL1Kws1UoqSxIVQhRKEktLonRUXDj8ssHsxWSE4tTixVyE0uSM1JTFNRxaVHHpcFNncuWugBmU7FCUWIeFxcAZrc83g==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Operator &lt;= type T test, T</Name>
+			<Path>.</Path>
+			<FullName>./Operator_&lt;=_type_T_test,_T</FullName>
+			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Operator &lt;= type T test\, T"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0183385</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/acoville/Desktop/structures/build/structures_unit_test "Operator &lt;= type T test\, T"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJxzy8wpSS0qtlLwL0gtSizJL1KwsVUoqSxIVQhRKEktLonRUQjh8ssHsxWSE4tTixVyE0uSM1JTFNRxaVHHpSFEncuWugBmU7FCUWIeFxcActU89g==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Operator &lt;= type T test, F</Name>
+			<Path>.</Path>
+			<FullName>./Operator_&lt;=_type_T_test,_F</FullName>
+			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Operator &lt;= type T test\, F"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0168254</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/acoville/Desktop/structures/build/structures_unit_test "Operator &lt;= type T test\, F"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJxzy8wpSS0qtlLwL0gtSizJL1KwsVUoqSxIVQhRKEktLonRUXDj8ssHsxWSE4tTixVyE0uSM1JTFNRxaVHHpcFNncuWugBmU7FCUWIeFxcAZC082g==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Empty list has a size of 0</Name>
+			<Path>.</Path>
+			<FullName>./Empty_list_has_a_size_of_0</FullName>
+			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Empty list has a size of 0"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0142857</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/acoville/Desktop/structures/build/structures_unit_test "Empty list has a size of 0"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJytyTEKgDAQRNE+p5hSO20FCwu9x6IrLsQkZLbR04uewV89+ItF18oB81n8QjQ6DiEEtFuRd3Rh/LcwxQhXOlGE1A1NjxfVLSdYQv9trEJtQ3gA+2AuoQ==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
 			<Name>Inserting increments size</Name>
 			<Path>.</Path>
 			<FullName>./Inserting_increments_size</FullName>
 			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Inserting increments size"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0133497</Value>
+					<Value>0.0115237</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -305,7 +401,7 @@
 			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Deleting decrements size when size &gt; 0"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0119427</Value>
+					<Value>0.00592652</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -328,7 +424,7 @@
 			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Default constructed List is Empty"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0103469</Value>
+					<Value>0.0132586</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -351,7 +447,7 @@
 			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Inserting one element makes the list not empty"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.00727212</Value>
+					<Value>0.011848</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -374,7 +470,7 @@
 			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Deleting a list with one element makes it empty"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.00573859</Value>
+					<Value>0.00755174</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -397,7 +493,7 @@
 			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Find -readonly returns F if the value is not found"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.00377112</Value>
+					<Value>0.0059185</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -413,14 +509,20 @@
 				</Measurement>
 			</Results>
 		</Test>
-		<Test Status="passed">
+		<Test Status="failed">
 			<Name>Find -readonly returns T if value is found</Name>
 			<Path>.</Path>
 			<FullName>./Find_-readonly_returns_T_if_value_is_found</FullName>
 			<FullCommandLine>/home/acoville/Desktop/structures/build/structures_unit_test "Find -readonly returns T if value is found"</FullCommandLine>
 			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.00553417</Value>
+					<Value>0.0040221</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -432,12 +534,12 @@
 					<Value>/home/acoville/Desktop/structures/build/structures_unit_test "Find -readonly returns T if value is found"</Value>
 				</NamedMeasurement>
 				<Measurement>
-					<Value encoding="base64" compression="gzip">eJytybEJgEAMRuH+pvhLLSxsBQsbJ3CBw4sQCDlJcoLbi87gqz54K0uQ+YSVtWAwyqWq3DCKZurYwAeuLI3AjqM2LWn+t7SIIMjDcWZ3KuhGvLDgqmDF+G3s2alP6QEcQDTw====</Value>
+					<Value encoding="base64" compression="gzip">eJytUsFKxEAMvecrctRDO+56kF2QRdwuLPRiXc9LaFM6OM4Mk5mqIH6703oQvCl9EAJJ4D1e3kGbyEG2eNC2wyIwdc6adwwcU7CCJ9Q9jmQSoxbsXbIdwOeyAIkhtZmP5ZysjufIEic6wnuK7YDjutyUaxxcHpP3RrcUtbMlNMniq44DFrusLaDz01wAimUBf3BnaWo1uBdW1LpRG8Nqz/IcnVc/nqnJLvVY16fcy9b77eYGymUB/5GxurrOubo71tV+C4hN9fB0bKqLb5/wEubP8ZsnK/lr00lPRhjgdlnAnKeWhHPOV/iRqydtuAMS4TBH5tcCvgD+w+n/====</Value>
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>Jun 27 15:47 ACST</EndDateTime>
-		<EndTestTime>1593238674</EndTestTime>
+		<EndDateTime>Jun 27 20:12 ACST</EndDateTime>
+		<EndTestTime>1593254540</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

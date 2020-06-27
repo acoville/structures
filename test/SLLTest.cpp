@@ -102,4 +102,18 @@ namespace structures::test
         bool found = t.Find(5);
         REQUIRE(found);
     }
+
+    //==================================================================================
+/*
+    TEST_CASE("Insertion of value between begin and end", "[Singly Linked List]")
+    {
+        auto t = SLinkedList<int>();
+        t.Insert(5);
+        t.Insert(100);
+        t.Insert(50);
+
+        bool found = t.Find(50);
+        REQUIRE(found);
+    }
+*/
 }

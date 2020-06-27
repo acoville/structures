@@ -24,10 +24,12 @@ namespace structures
     {
         int size = 0;
         bool empty = true;
+
         SLLNode<T> *start;
         SLLNode<T> *tail;
+
         SLLNode<T> *middle;
-        SLLNode<T> *head;
+        int middle_index = 0;
 
         //================================================================
 
@@ -93,7 +95,10 @@ namespace structures
 
                 default:
                 {
+                    SLLNode<T> *head;
+
                     // if arg is > tail, then insert there
+                    // this will solve in constant time
 
                     if(*tail < arg)
                     {
@@ -101,33 +106,39 @@ namespace structures
                         head->CreateChild(arg);
                         
                         tail = &tail->Next();
-                        middle = &middle->Next();
                     }
 
                     // otherwise, we will do at least 1 iteration 
                     // of binary search using the middle pointer
 
-                    //if(arg >= *middle)
-                    
+                    SLLNode<T> *end;
+
                     if(*middle <= arg)
                     {
                         head = middle;
+                        end = tail;
                     }
                     else
                     {
                         head = start;
+                        end = middle;
                     }
 
+/*
                     BEGIN:
+                    while(head != end)
+                    {
+                        // I will have to stitch nodes using a temp pointer here
 
 
-
-
+                    }
 
                     END:
+*/
 
                     break;
                 }
+
             }
 
             size++;
@@ -135,7 +146,30 @@ namespace structures
             if(empty)
                 empty = false;
 
-            // update middle 
+            //-- update middle, if necessary?
+            
+            if(size > 2)
+            {
+                int new_middle = size / 2;
+
+                if(new_middle != middle_index)
+                {
+                    int delta = new_middle - middle_index;
+
+                    // I believe the delta should never be > 1
+
+                    for(int i = 0; i < delta; i++)
+                    {
+                        // I don't see why this would ever be true, 
+                        // but just incase
+
+                        if(!middle->Leaf())
+                        {
+                            middle = &middle->Next();
+                        }
+                    }
+                }
+            }
         }
 
         //===============================================================
@@ -183,26 +217,64 @@ namespace structures
 
         bool Find(T arg)
         {
-            head = start;
+            // arg out of bounds? then return F
 
-            BEGIN:
+            // arg == start?
 
-            if(*head == arg)
+            if(*start == arg)
             {
                 return true;
             }
+
+            // arg == tail?
+
+            if(*tail == arg)
+            {
+                return true;
+            }
+
+            // cut the list in half for 1 iteration of binary search
+
+            SLLNode<T> *head;
+            SLLNode<T> *end;
+
+            if(*middle < arg)
+            {
+                head = middle;
+                end = tail;
+            }
             else
             {
-                if(head->Leaf())
+                head = start;
+                end = middle;
+            }
+
+            // search from head to end
+
+            BEGIN:
+
+            while(head != end)
+            {
+                if(*head == arg)
                 {
-                    return false;
+                    return true;
                 }
                 else
                 {
-                    head = &head->Next();
-                    goto BEGIN;
+                    if(head->Leaf())
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        head = &head->Next();
+                        goto BEGIN;
+                    }
                 }
             }
+
+            // if execution comes to here then the value was not 
+            // found in the appropriate half of the list.
 
             return false;
         }
