@@ -9,7 +9,7 @@ namespace structures::test
     {
         auto n = SLLNode<int>(5);
 
-        bool tail = n.Tail();
+        bool tail = n.Leaf();
 
         REQUIRE(tail);
     }
@@ -106,5 +106,47 @@ namespace structures::test
         REQUIRE(!result);
     }
 
-       
+    //===================================================================
+
+    TEST_CASE("Operator >= type T test, T", "[SLLNode]")
+    {
+        auto n1 = SLLNode<int>(5);
+
+        bool result = n1 >= 3;
+
+        REQUIRE(result);
+    }
+
+    //-----------------------------------------------------
+
+    TEST_CASE("Operator >= type T test, F", "[SLLNode]")
+    {
+        auto n1 = SLLNode<int>(5);
+
+        bool result = n1 >= 7;
+
+        REQUIRE(!result);
+    }
+
+    //=====================================================================
+
+    TEST_CASE("Operator <= type T test, T", "[SLLNode]")
+    {
+        auto n1 = SLLNode<int>(5);
+
+        bool result = n1 <= 7;
+
+        REQUIRE(result);
+    }
+
+    //----------------------------------------------------------
+
+    TEST_CASE("Operator <= type T test, F", "[SLLNode]")
+    {
+        auto n1 = SLLNode<int>(5);
+
+        bool result = n1 <= 3;
+
+        REQUIRE(!result);
+    }
 }

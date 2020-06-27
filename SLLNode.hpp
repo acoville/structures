@@ -23,17 +23,17 @@ namespace structures
 
         T data;
         SLLNode *next;
-        bool tail = true;
+        bool leaf = true;
 
         public:
 
         //================================================================
 
-        // a node is a tail node if it has no next
+        // a node is a leaf node if it has no next
 
-        bool Tail() const
+        bool Leaf() const
         {
-            return tail;
+            return leaf;
         }
 
         //===============================================================
@@ -76,7 +76,7 @@ namespace structures
 
         SLLNode &Next()
         {
-            if(!tail)
+            if(!leaf)
             {
                 return *next;
             }
@@ -86,15 +86,35 @@ namespace structures
             }       
         }
 
+        //=================================================================
+
+        /*---------------------------------
+
+            Create a child Node
+
+        ----------------------------------*/
+
+        void CreateChild(T arg)
+        {
+            next = new SLLNode(arg);
+            leaf = false;
+        }
+
         //================================================================
 
-        /*-----------------------------------------
+        /*-----------------------------------
 
-            Function to add a new child node
-            to this node
+            Destructor
 
-        -----------------------------------------*/
+        ------------------------------------*/
 
+        virtual ~SLLNode<T>()
+        {
+            if(!leaf)
+            {
+                delete next;
+            }
+        }
 
         //================================================================
 
@@ -168,6 +188,26 @@ namespace structures
         bool operator != (const T &arg)
         {
             return (data != arg) ? true : false;
+        }
+
+        //=======================================================================
+
+        /*-------------------------------------
+
+            <= operator and >= operator
+
+        ---------------------------------------*/
+
+        bool operator <= (const T &arg)
+        {
+            return (data <= arg) ? true : false;
+        }
+
+        //---------------------------------------
+
+        bool operator >= (const T &arg)
+        {
+            return (data >= arg) ? true : false;
         }
     };
 }

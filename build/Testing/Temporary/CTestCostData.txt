@@ -1,0 +1,18 @@
+New Node is a tail node 1 0.017237
+Operator < test T 1 0.0237663
+Operator < test F 1 0.0243839
+Operator > test T 1 0.0250037
+Operator > test F 1 0.0223839
+Operator < type T test, T 1 0.0243405
+Operator < type T test, F 1 0.0243663
+Operator > type T test, T 1 0.0244209
+Operator > type T test, F 1 0.0225962
+Empty list has a size of 0 1 0.0214201
+Inserting increments size 1 0.0133497
+Deleting decrements size when size > 0 1 0.0119427
+Default constructed List is Empty 1 0.0103469
+Inserting one element makes the list not empty 1 0.00727212
+Deleting a list with one element makes it empty 1 0.00573859
+Find -readonly returns F if the value is not found 1 0.00377112
+Find -readonly returns T if value is found 1 0.00553417
+---

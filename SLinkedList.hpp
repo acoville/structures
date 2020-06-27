@@ -26,6 +26,7 @@ namespace structures
         bool empty = true;
         SLLNode<T> *start;
         SLLNode<T> *tail;
+        SLLNode<T> *middle;
         SLLNode<T> *head;
 
         //================================================================
@@ -48,13 +49,42 @@ namespace structures
 
         //================================================================
 
+        /*------------------------------------------------------------
+
+            Insert creates a new node at the appropriate
+            place within the linked list. 
+
+            OPTIMIZATION STRATEGY
+
+                - best case constant time (arg > tail)
+                - worst case linear time / 2 (arg > or < mid)
+
+            if size == 0, head = new SLLNode<T>
+
+            if size > 0,
+
+                if (arg > tail), tail.Next = new SLLNode<T>
+                    O 1 time
+
+                if (arg > mid), head = mid, then iterate through the 
+                    back half of the list until correct place is found
+
+                if (arg < mid), head = start, then iterate through the 
+                    front half of the list until correct place is found  
+
+        --------------------------------------------------------------*/
+
         void Insert(T arg) 
         {
             switch(size)
             {
+                // list is empty, this will be the first node
+
                 case(0):
                 {
                     start = new SLLNode<T>(arg);
+                    middle = start;
+                    tail = start;
 
                     break;
                 }
@@ -63,33 +93,38 @@ namespace structures
 
                 default:
                 {
-                    /*
+                    // if arg is > tail, then insert there
 
-                    head = start;
+                    if(*tail < arg)
+                    {
+                        head = tail;
+                        head->CreateChild(arg);
+                        
+                        tail = &tail->Next();
+                        middle = &middle->Next();
+                    }
+
+                    // otherwise, we will do at least 1 iteration 
+                    // of binary search using the middle pointer
+
+                    //if(arg >= *middle)
+                    
+                    if(*middle <= arg)
+                    {
+                        head = middle;
+                    }
+                    else
+                    {
+                        head = start;
+                    }
 
                     BEGIN:
 
-                    if(arg > *head)
-                    {
-                        // is there a node after this? 
 
-                        if(head->Tail())
-                        {
-                            // no? Then add to the end of this node
 
-                            head->next = new SLLNode<T>(arg);
 
-                        }
-
-                        else
-                        {
-                            // yes? Then see if 
-                        }
-                        
-                    }
 
                     END:
-                    */
 
                     break;
                 }
@@ -99,6 +134,8 @@ namespace structures
 
             if(empty)
                 empty = false;
+
+            // update middle 
         }
 
         //===============================================================
@@ -156,7 +193,7 @@ namespace structures
             }
             else
             {
-                if(head->Tail())
+                if(head->Leaf())
                 {
                     return false;
                 }
