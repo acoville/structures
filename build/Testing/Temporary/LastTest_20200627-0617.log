@@ -1,10 +1,29 @@
-Start testing: Jun 27 20:12 ACST
+Start testing: Jun 27 20:16 ACST
 ----------------------------------------------------------
+21/21 Testing: Find -readonly returns T if value is found
+21/21 Test: Find -readonly returns T if value is found
+Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Find -readonly returns T if value is found"
+Directory: /home/acoville/Desktop/structures/build
+"Find -readonly returns T if value is found" start time: Jun 27 20:16 ACST
+Output:
+----------------------------------------------------------
+Filters: Find -readonly returns T if value is found
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Find -readonly returns T if value is found" end time: Jun 27 20:16 ACST
+"Find -readonly returns T if value is found" time elapsed: 00:00:00
+----------------------------------------------------------
+
 1/21 Testing: New Node is a tail node
 1/21 Test: New Node is a tail node
 Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "New Node is a tail node"
 Directory: /home/acoville/Desktop/structures/build
-"New Node is a tail node" start time: Jun 27 20:12 ACST
+"New Node is a tail node" start time: Jun 27 20:16 ACST
 Output:
 ----------------------------------------------------------
 Filters: New Node is a tail node
@@ -12,10 +31,10 @@ Filters: New Node is a tail node
 All tests passed (1 assertion in 1 test case)
 
 <end of output>
-Test time =   0.01 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"New Node is a tail node" end time: Jun 27 20:12 ACST
+"New Node is a tail node" end time: Jun 27 20:16 ACST
 "New Node is a tail node" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -23,7 +42,7 @@ Test Passed.
 2/21 Test: Operator < test T
 Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Operator < test T"
 Directory: /home/acoville/Desktop/structures/build
-"Operator < test T" start time: Jun 27 20:12 ACST
+"Operator < test T" start time: Jun 27 20:16 ACST
 Output:
 ----------------------------------------------------------
 Filters: Operator < test T
@@ -31,10 +50,10 @@ Filters: Operator < test T
 All tests passed (1 assertion in 1 test case)
 
 <end of output>
-Test time =   0.01 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"Operator < test T" end time: Jun 27 20:12 ACST
+"Operator < test T" end time: Jun 27 20:16 ACST
 "Operator < test T" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -42,7 +61,7 @@ Test Passed.
 3/21 Test: Operator < test F
 Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Operator < test F"
 Directory: /home/acoville/Desktop/structures/build
-"Operator < test F" start time: Jun 27 20:12 ACST
+"Operator < test F" start time: Jun 27 20:16 ACST
 Output:
 ----------------------------------------------------------
 Filters: Operator < test F
@@ -50,10 +69,10 @@ Filters: Operator < test F
 All tests passed (1 assertion in 1 test case)
 
 <end of output>
-Test time =   0.01 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"Operator < test F" end time: Jun 27 20:12 ACST
+"Operator < test F" end time: Jun 27 20:16 ACST
 "Operator < test F" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -61,7 +80,7 @@ Test Passed.
 4/21 Test: Operator > test T
 Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Operator > test T"
 Directory: /home/acoville/Desktop/structures/build
-"Operator > test T" start time: Jun 27 20:12 ACST
+"Operator > test T" start time: Jun 27 20:16 ACST
 Output:
 ----------------------------------------------------------
 Filters: Operator > test T
@@ -72,7 +91,7 @@ All tests passed (1 assertion in 1 test case)
 Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"Operator > test T" end time: Jun 27 20:12 ACST
+"Operator > test T" end time: Jun 27 20:16 ACST
 "Operator > test T" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -80,7 +99,7 @@ Test Passed.
 5/21 Test: Operator > test F
 Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Operator > test F"
 Directory: /home/acoville/Desktop/structures/build
-"Operator > test F" start time: Jun 27 20:12 ACST
+"Operator > test F" start time: Jun 27 20:16 ACST
 Output:
 ----------------------------------------------------------
 Filters: Operator > test F
@@ -91,7 +110,7 @@ All tests passed (1 assertion in 1 test case)
 Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"Operator > test F" end time: Jun 27 20:12 ACST
+"Operator > test F" end time: Jun 27 20:16 ACST
 "Operator > test F" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -99,7 +118,7 @@ Test Passed.
 6/21 Test: Operator < type T test, T
 Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Operator < type T test\, T"
 Directory: /home/acoville/Desktop/structures/build
-"Operator < type T test, T" start time: Jun 27 20:12 ACST
+"Operator < type T test, T" start time: Jun 27 20:16 ACST
 Output:
 ----------------------------------------------------------
 Filters: Operator < type T test\, T
@@ -109,10 +128,10 @@ No test cases matched 'T'
 No tests ran
 
 <end of output>
-Test time =   0.02 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"Operator < type T test, T" end time: Jun 27 20:12 ACST
+"Operator < type T test, T" end time: Jun 27 20:16 ACST
 "Operator < type T test, T" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -120,7 +139,7 @@ Test Passed.
 7/21 Test: Operator < type T test, F
 Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Operator < type T test\, F"
 Directory: /home/acoville/Desktop/structures/build
-"Operator < type T test, F" start time: Jun 27 20:12 ACST
+"Operator < type T test, F" start time: Jun 27 20:16 ACST
 Output:
 ----------------------------------------------------------
 Filters: Operator < type T test\, F
@@ -133,36 +152,15 @@ No tests ran
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"Operator < type T test, F" end time: Jun 27 20:12 ACST
+"Operator < type T test, F" end time: Jun 27 20:16 ACST
 "Operator < type T test, F" time elapsed: 00:00:00
-----------------------------------------------------------
-
-9/21 Testing: Operator > type T test, F
-9/21 Test: Operator > type T test, F
-Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Operator > type T test\, F"
-Directory: /home/acoville/Desktop/structures/build
-"Operator > type T test, F" start time: Jun 27 20:12 ACST
-Output:
-----------------------------------------------------------
-Filters: Operator > type T test\, F
-No test cases matched 'Operator > type T test\'
-No test cases matched 'F'
-===============================================================================
-No tests ran
-
-<end of output>
-Test time =   0.02 sec
-----------------------------------------------------------
-Test Passed.
-"Operator > type T test, F" end time: Jun 27 20:12 ACST
-"Operator > type T test, F" time elapsed: 00:00:00
 ----------------------------------------------------------
 
 8/21 Testing: Operator > type T test, T
 8/21 Test: Operator > type T test, T
 Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Operator > type T test\, T"
 Directory: /home/acoville/Desktop/structures/build
-"Operator > type T test, T" start time: Jun 27 20:12 ACST
+"Operator > type T test, T" start time: Jun 27 20:16 ACST
 Output:
 ----------------------------------------------------------
 Filters: Operator > type T test\, T
@@ -175,15 +173,36 @@ No tests ran
 Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"Operator > type T test, T" end time: Jun 27 20:12 ACST
+"Operator > type T test, T" end time: Jun 27 20:16 ACST
 "Operator > type T test, T" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/21 Testing: Operator > type T test, F
+9/21 Test: Operator > type T test, F
+Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Operator > type T test\, F"
+Directory: /home/acoville/Desktop/structures/build
+"Operator > type T test, F" start time: Jun 27 20:16 ACST
+Output:
+----------------------------------------------------------
+Filters: Operator > type T test\, F
+No test cases matched 'Operator > type T test\'
+No test cases matched 'F'
+===============================================================================
+No tests ran
+
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"Operator > type T test, F" end time: Jun 27 20:16 ACST
+"Operator > type T test, F" time elapsed: 00:00:00
 ----------------------------------------------------------
 
 10/21 Testing: Operator >= type T test, T
 10/21 Test: Operator >= type T test, T
 Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Operator >= type T test\, T"
 Directory: /home/acoville/Desktop/structures/build
-"Operator >= type T test, T" start time: Jun 27 20:12 ACST
+"Operator >= type T test, T" start time: Jun 27 20:16 ACST
 Output:
 ----------------------------------------------------------
 Filters: Operator >= type T test\, T
@@ -196,7 +215,7 @@ No tests ran
 Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"Operator >= type T test, T" end time: Jun 27 20:12 ACST
+"Operator >= type T test, T" end time: Jun 27 20:16 ACST
 "Operator >= type T test, T" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -204,7 +223,7 @@ Test Passed.
 11/21 Test: Operator >= type T test, F
 Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Operator >= type T test\, F"
 Directory: /home/acoville/Desktop/structures/build
-"Operator >= type T test, F" start time: Jun 27 20:12 ACST
+"Operator >= type T test, F" start time: Jun 27 20:16 ACST
 Output:
 ----------------------------------------------------------
 Filters: Operator >= type T test\, F
@@ -217,7 +236,7 @@ No tests ran
 Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"Operator >= type T test, F" end time: Jun 27 20:12 ACST
+"Operator >= type T test, F" end time: Jun 27 20:16 ACST
 "Operator >= type T test, F" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -225,7 +244,7 @@ Test Passed.
 12/21 Test: Operator <= type T test, T
 Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Operator <= type T test\, T"
 Directory: /home/acoville/Desktop/structures/build
-"Operator <= type T test, T" start time: Jun 27 20:12 ACST
+"Operator <= type T test, T" start time: Jun 27 20:16 ACST
 Output:
 ----------------------------------------------------------
 Filters: Operator <= type T test\, T
@@ -235,10 +254,10 @@ No test cases matched 'T'
 No tests ran
 
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Operator <= type T test, T" end time: Jun 27 20:12 ACST
+"Operator <= type T test, T" end time: Jun 27 20:16 ACST
 "Operator <= type T test, T" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -246,7 +265,7 @@ Test Passed.
 13/21 Test: Operator <= type T test, F
 Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Operator <= type T test\, F"
 Directory: /home/acoville/Desktop/structures/build
-"Operator <= type T test, F" start time: Jun 27 20:12 ACST
+"Operator <= type T test, F" start time: Jun 27 20:16 ACST
 Output:
 ----------------------------------------------------------
 Filters: Operator <= type T test\, F
@@ -256,10 +275,10 @@ No test cases matched 'F'
 No tests ran
 
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Operator <= type T test, F" end time: Jun 27 20:12 ACST
+"Operator <= type T test, F" end time: Jun 27 20:16 ACST
 "Operator <= type T test, F" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -267,7 +286,7 @@ Test Passed.
 14/21 Test: Empty list has a size of 0
 Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Empty list has a size of 0"
 Directory: /home/acoville/Desktop/structures/build
-"Empty list has a size of 0" start time: Jun 27 20:12 ACST
+"Empty list has a size of 0" start time: Jun 27 20:16 ACST
 Output:
 ----------------------------------------------------------
 Filters: Empty list has a size of 0
@@ -278,7 +297,7 @@ All tests passed (1 assertion in 1 test case)
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Empty list has a size of 0" end time: Jun 27 20:12 ACST
+"Empty list has a size of 0" end time: Jun 27 20:16 ACST
 "Empty list has a size of 0" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -286,7 +305,7 @@ Test Passed.
 15/21 Test: Inserting increments size
 Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Inserting increments size"
 Directory: /home/acoville/Desktop/structures/build
-"Inserting increments size" start time: Jun 27 20:12 ACST
+"Inserting increments size" start time: Jun 27 20:16 ACST
 Output:
 ----------------------------------------------------------
 Filters: Inserting increments size
@@ -297,7 +316,7 @@ All tests passed (1 assertion in 1 test case)
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Inserting increments size" end time: Jun 27 20:12 ACST
+"Inserting increments size" end time: Jun 27 20:16 ACST
 "Inserting increments size" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -305,7 +324,7 @@ Test Passed.
 16/21 Test: Deleting decrements size when size > 0
 Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Deleting decrements size when size > 0"
 Directory: /home/acoville/Desktop/structures/build
-"Deleting decrements size when size > 0" start time: Jun 27 20:12 ACST
+"Deleting decrements size when size > 0" start time: Jun 27 20:16 ACST
 Output:
 ----------------------------------------------------------
 Filters: Deleting decrements size when size > 0
@@ -316,7 +335,7 @@ All tests passed (1 assertion in 1 test case)
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Deleting decrements size when size > 0" end time: Jun 27 20:12 ACST
+"Deleting decrements size when size > 0" end time: Jun 27 20:16 ACST
 "Deleting decrements size when size > 0" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -324,7 +343,7 @@ Test Passed.
 17/21 Test: Default constructed List is Empty
 Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Default constructed List is Empty"
 Directory: /home/acoville/Desktop/structures/build
-"Default constructed List is Empty" start time: Jun 27 20:12 ACST
+"Default constructed List is Empty" start time: Jun 27 20:16 ACST
 Output:
 ----------------------------------------------------------
 Filters: Default constructed List is Empty
@@ -335,7 +354,7 @@ All tests passed (1 assertion in 1 test case)
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Default constructed List is Empty" end time: Jun 27 20:12 ACST
+"Default constructed List is Empty" end time: Jun 27 20:16 ACST
 "Default constructed List is Empty" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -343,7 +362,7 @@ Test Passed.
 18/21 Test: Inserting one element makes the list not empty
 Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Inserting one element makes the list not empty"
 Directory: /home/acoville/Desktop/structures/build
-"Inserting one element makes the list not empty" start time: Jun 27 20:12 ACST
+"Inserting one element makes the list not empty" start time: Jun 27 20:16 ACST
 Output:
 ----------------------------------------------------------
 Filters: Inserting one element makes the list not empty
@@ -354,7 +373,7 @@ All tests passed (1 assertion in 1 test case)
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Inserting one element makes the list not empty" end time: Jun 27 20:12 ACST
+"Inserting one element makes the list not empty" end time: Jun 27 20:16 ACST
 "Inserting one element makes the list not empty" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -362,7 +381,7 @@ Test Passed.
 19/21 Test: Deleting a list with one element makes it empty
 Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Deleting a list with one element makes it empty"
 Directory: /home/acoville/Desktop/structures/build
-"Deleting a list with one element makes it empty" start time: Jun 27 20:12 ACST
+"Deleting a list with one element makes it empty" start time: Jun 27 20:16 ACST
 Output:
 ----------------------------------------------------------
 Filters: Deleting a list with one element makes it empty
@@ -373,7 +392,7 @@ All tests passed (1 assertion in 1 test case)
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"Deleting a list with one element makes it empty" end time: Jun 27 20:12 ACST
+"Deleting a list with one element makes it empty" end time: Jun 27 20:16 ACST
 "Deleting a list with one element makes it empty" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -381,7 +400,7 @@ Test Passed.
 20/21 Test: Find -readonly returns F if the value is not found
 Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Find -readonly returns F if the value is not found"
 Directory: /home/acoville/Desktop/structures/build
-"Find -readonly returns F if the value is not found" start time: Jun 27 20:12 ACST
+"Find -readonly returns F if the value is not found" start time: Jun 27 20:16 ACST
 Output:
 ----------------------------------------------------------
 Filters: Find -readonly returns F if the value is not found
@@ -389,47 +408,11 @@ Filters: Find -readonly returns F if the value is not found
 All tests passed (1 assertion in 1 test case)
 
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"Find -readonly returns F if the value is not found" end time: Jun 27 20:12 ACST
+"Find -readonly returns F if the value is not found" end time: Jun 27 20:16 ACST
 "Find -readonly returns F if the value is not found" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-21/21 Testing: Find -readonly returns T if value is found
-21/21 Test: Find -readonly returns T if value is found
-Command: "/home/acoville/Desktop/structures/build/structures_unit_test" "Find -readonly returns T if value is found"
-Directory: /home/acoville/Desktop/structures/build
-"Find -readonly returns T if value is found" start time: Jun 27 20:12 ACST
-Output:
-----------------------------------------------------------
-Filters: Find -readonly returns T if value is found
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-structures_unit_test is a Catch v2.9.2 host application.
-Run with -? for options
-
--------------------------------------------------------------------------------
-Find -readonly returns T if value is found
--------------------------------------------------------------------------------
-/home/acoville/Desktop/structures/test/SLLTest.cpp:97
-...............................................................................
-
-/home/acoville/Desktop/structures/test/SLLTest.cpp:103: FAILED:
-  REQUIRE( found )
-with expansion:
-  false
-
-===============================================================================
-test cases: 1 | 1 failed
-assertions: 1 | 1 failed
-
-<end of output>
-Test time =   0.00 sec
-----------------------------------------------------------
-Test Failed.
-"Find -readonly returns T if value is found" end time: Jun 27 20:12 ACST
-"Find -readonly returns T if value is found" time elapsed: 00:00:00
-----------------------------------------------------------
-
-End testing: Jun 27 20:12 ACST
+End testing: Jun 27 20:16 ACST

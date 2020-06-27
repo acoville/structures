@@ -124,21 +124,38 @@ namespace structures
                         end = middle;
                     }
 
-/*
+                    SLLNode<T> *next;
+
                     BEGIN:
+                    
                     while(head != end)
                     {
                         // I will have to stitch nodes using a temp pointer here
 
+                        next = &head->Next();
 
+                        if(*head < arg and *next > arg)
+                        {
+                            // insert here 
+
+                            head->CreateChild(arg);
+                            head = &head->Next();
+                            head->SetChild(*next);
+
+                            goto END;
+                        }
+
+                        else
+                        {
+                            head = &head->Next();
+                            goto BEGIN;
+                        }                  
                     }
 
                     END:
-*/
 
                     break;
                 }
-
             }
 
             size++;
@@ -219,6 +236,11 @@ namespace structures
         {
             // arg out of bounds? then return F
 
+            if(*start > arg || *tail < arg)
+            {
+                return false;
+            }
+
             // arg == start?
 
             if(*start == arg)
@@ -233,20 +255,32 @@ namespace structures
                 return true;
             }
 
+            //------------------------------------------------------------
+            // something is not working right in this half of Find
+            //------------------------------------------------------------
+
             // cut the list in half for 1 iteration of binary search
 
             SLLNode<T> *head;
             SLLNode<T> *end;
 
-            if(*middle < arg)
+            if(size < 5)
             {
-                head = middle;
+                head = start;
                 end = tail;
             }
             else
             {
-                head = start;
-                end = middle;
+                if(*middle < arg)
+                {
+                    head = middle;
+                    end = tail;
+                }
+                else
+                {
+                    head = start;
+                    end = middle;
+                }
             }
 
             // search from head to end
@@ -261,15 +295,8 @@ namespace structures
                 }
                 else
                 {
-                    if(head->Leaf())
-                    {
-                        return false;
-                    }
-                    else
-                    {
-                        head = &head->Next();
-                        goto BEGIN;
-                    }
+                    head = &head->Next();
+                    goto BEGIN;
                 }
             }
 

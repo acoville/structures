@@ -15,26 +15,46 @@ Inserting 0 0
 Deleting 0 0
 Find 0 0
 Find 0 0
-New Node is a tail node 1 0.0116842
-Operator < test T 1 0.0135259
-Operator < test F 1 0.0142005
-Operator > test T 1 0.0158719
-Operator > test F 1 0.0174935
-Operator < type T test, T 1 0.0218319
-Operator < type T test, F 1 0.025625
-Operator > type T test, T 1 0.0257398
-Operator > type T test, F 1 0.0243645
-Operator >= type T test, T 1 0.0232567
-Operator >= type T test, F 1 0.0209571
-Operator <= type T test, T 1 0.0183385
-Operator <= type T test, F 1 0.0168254
-Empty list has a size of 0 1 0.0142857
-Inserting increments size 1 0.0115237
-Deleting decrements size when size > 0 1 0.00592652
-Default constructed List is Empty 1 0.0132586
-Inserting one element makes the list not empty 1 0.011848
-Deleting a list with one element makes it empty 1 0.00755174
-Find -readonly returns F if the value is not found 1 0.0059185
-Find -readonly returns T if value is found 0 0
+New 0 0
+Operator 0 0
+Operator 0 0
+Operator 0 0
+Operator 0 0
+Operator 0 0
+Operator 0 0
+Operator 0 0
+Operator 0 0
+Operator 0 0
+Operator 0 0
+Operator 0 0
+Operator 0 0
+Empty 0 0
+Inserting 0 0
+Deleting 0 0
+Default 0 0
+Inserting 0 0
+Deleting 0 0
+Find 0 0
+Find 0 0
+New Node is a tail node 1 0.0225956
+Operator < test T 1 0.0232028
+Operator < test F 1 0.0240053
+Operator > test T 1 0.0247632
+Operator > test F 1 0.0248454
+Operator < type T test, T 1 0.0261973
+Operator < type T test, F 1 0.0270204
+Operator > type T test, T 1 0.0265625
+Operator > type T test, F 1 0.0244625
+Operator >= type T test, T 1 0.0189444
+Operator >= type T test, F 1 0.015465
+Operator <= type T test, T 1 0.0135676
+Operator <= type T test, F 1 0.0121316
+Empty list has a size of 0 1 0.00770511
+Inserting increments size 1 0.00619863
+Deleting decrements size when size > 0 1 0.00993103
+Default constructed List is Empty 1 0.00823875
+Inserting one element makes the list not empty 1 0.00689345
+Deleting a list with one element makes it empty 1 0.00527271
+Find -readonly returns F if the value is not found 1 0.0043251
+Find -readonly returns T if value is found 1 0.0202965
 ---
-Find -readonly returns T if value is found

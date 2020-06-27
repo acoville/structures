@@ -14,12 +14,6 @@ functional
 SLLNode.hpp
 /home/acoville/Desktop/structures/SLLNode.hpp
 
-/home/acoville/Desktop/structures/test/SLLNodeTest.cpp
-include/catch.hpp
-/home/acoville/Desktop/structures/test/include/catch.hpp
-../SLLNode.hpp
-/home/acoville/Desktop/structures/SLLNode.hpp
-
 /home/acoville/Desktop/structures/test/SLLTest.cpp
 include/catch.hpp
 /home/acoville/Desktop/structures/test/include/catch.hpp
