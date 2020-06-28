@@ -105,12 +105,10 @@ namespace structures::test
 
     //==================================================================================
     
-    TEST_CASE("Insertion of value between begin and end", "[Singly Linked List]")
+    TEST_CASE("Insertion with a 3-element list", "[Singly Linked List]")
     {
         auto t = SLinkedList<int>();
         t.Insert(5);
-        //t.Insert(10);
-        //t.Insert(15);
         t.Insert(100);
         t.Insert(50);
 
@@ -118,6 +116,26 @@ namespace structures::test
         REQUIRE(found);
     }
 
-    /*
-    */
+    //==================================================================================
+
+    TEST_CASE("Insertion with a 5-element list", "[Singly Linked List]")
+    {
+        auto t = SLinkedList<int>();
+        t.Insert(5);
+        t.Insert(10);
+        t.Insert(15);
+        t.Insert(100);
+        t.Insert(50);
+
+        bool found = t.Find(50);
+        REQUIRE(found);
+    }
+
+    //===================================================================================
+/*
+    TEST_CASE("Find rw version of a 3-element list", "[Singly Linked List]")
+    {
+
+    }
+*/
 }

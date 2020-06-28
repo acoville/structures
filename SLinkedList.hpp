@@ -37,6 +37,10 @@ namespace structures
 
         //================================================================
 
+        
+
+        //================================================================
+
         int Size() const
         {
             return size;
@@ -319,7 +323,7 @@ namespace structures
 
         ---------------------------------------------*/
 
-        bool Find(T arg, SLLNode<T> out)
+        bool Find(T arg, SLLNode<T> *out)
         {
             return false;
         }
