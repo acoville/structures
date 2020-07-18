@@ -19,8 +19,6 @@ namespace structures
     template <typename T>
     class SLLNode
     {
-        //friend class SLinkedList<T>;
-
         T data;
         SLLNode *next;
         bool leaf = true;
@@ -55,9 +53,9 @@ namespace structures
         
         //===============================================================
 
-        T& Data()
+        T Data()
         {
-            return &data;
+            return data;
         }
 
         //===============================================================
@@ -129,59 +127,6 @@ namespace structures
             }
         }
 
-        //================================================================
-
-        /*----------------------------------------
-
-            Boolean comparison operators
-
-
-
-        -----------------------------------------*/
-
-        bool operator < (const SLLNode &other) const
-        {
-            //return (*this < other ? true : false);
-
-            T data1 = this->data;
-            T data2 = other.data;
-
-            return data1 < data2 ? true : false;
-        }
-
-        //----------------------------------------------
-
-        bool operator > (const SLLNode &other) const
-        {
-            //return (*this > other ? true : false);
-
-            T data1 = this->data;
-            T data2 = other.data;
-
-            return data1 > data2 ? true : false;
-        }
-
-        //====================================================================
-
-        /*-----------------------------------------
-
-            Now I want comparison operators against
-            objects of type T
-
-        -----------------------------------------*/
-
-        bool operator < (const T &arg) const
-        {
-            return data < arg ? true : false;
-        }
-
-        //----------------------------------------
-
-        bool operator > (const T &arg) const
-        {
-            return data > arg ? true : false;
-        }
-
         //=====================================================================
 
         /*-----------------------------------------
@@ -201,26 +146,6 @@ namespace structures
         bool operator != (const T &arg)
         {
             return (data != arg) ? true : false;
-        }
-
-        //=======================================================================
-
-        /*-------------------------------------
-
-            <= operator and >= operator
-
-        ---------------------------------------*/
-
-        bool operator <= (const T &arg)
-        {
-            return (data <= arg) ? true : false;
-        }
-
-        //---------------------------------------
-
-        bool operator >= (const T &arg)
-        {
-            return (data >= arg) ? true : false;
         }
     };
 }

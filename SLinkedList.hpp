@@ -19,7 +19,7 @@
 
 namespace structures
 {
-    template <typename T, class invariant = std::less<T>>
+    template <typename T>
     class SLinkedList
     {
         int size = 0;
@@ -31,13 +31,7 @@ namespace structures
         SLLNode<T> *middle;
         int middle_index = 0;
 
-        //================================================================
-
         public:
-
-        //================================================================
-
-        
 
         //================================================================
 
@@ -60,24 +54,6 @@ namespace structures
             Insert creates a new node at the appropriate
             place within the linked list. 
 
-            OPTIMIZATION STRATEGY
-
-                - best case constant time (arg > tail)
-                - worst case linear time / 2 (arg > or < mid)
-
-            if size == 0, head = new SLLNode<T>
-
-            if size > 0,
-
-                if (arg > tail), tail.Next = new SLLNode<T>
-                    O 1 time
-
-                if (arg > mid), head = mid, then iterate through the 
-                    back half of the list until correct place is found
-
-                if (arg < mid), head = start, then iterate through the 
-                    front half of the list until correct place is found  
-
         --------------------------------------------------------------*/
 
         void Insert(T arg) 
@@ -99,64 +75,7 @@ namespace structures
 
                 default:
                 {
-                    SLLNode<T> *head;
 
-                    // if arg is > tail, then insert there
-                    // this will solve in constant time
-
-                    if(*tail < arg)
-                    {
-                        head = tail;
-                        head->CreateChild(arg);
-                        
-                        tail = &tail->Next();
-                    }
-
-                    // otherwise, we will do at least 1 iteration 
-                    // of binary search using the middle pointer
-
-                    SLLNode<T> *end;
-
-                    if(*middle <= arg)
-                    {
-                        head = middle;
-                        end = tail;
-                    }
-                    else
-                    {
-                        head = start;
-                        end = middle;
-                    }
-
-                    SLLNode<T> *next;
-
-                    BEGIN:
-                    
-                    while(head != end)
-                    {
-                        // I will have to stitch nodes using a temp pointer here
-
-                        next = &head->Next();
-
-                        if(*head < arg and *next > arg)
-                        {
-                            // insert here 
-
-                            head->CreateChild(arg);
-                            head = &head->Next();
-                            head->SetChild(*next);
-
-                            goto END;
-                        }
-
-                        else
-                        {
-                            head = &head->Next();
-                            goto BEGIN;
-                        }                  
-                    }
-
-                    END:
 
                     break;
                 }
@@ -166,31 +85,6 @@ namespace structures
 
             if(empty)
                 empty = false;
-
-            //-- update middle, if necessary?
-            
-            if(size > 2)
-            {
-                int new_middle = size / 2;
-
-                if(new_middle != middle_index)
-                {
-                    int delta = new_middle - middle_index;
-
-                    // I believe the delta should never be > 1
-
-                    for(int i = 0; i < delta; i++)
-                    {
-                        // I don't see why this would ever be true, 
-                        // but just incase
-
-                        if(!middle->Leaf())
-                        {
-                            middle = &middle->Next();
-                        }
-                    }
-                }
-            }
         }
 
         //===============================================================
@@ -204,7 +98,8 @@ namespace structures
         }
 
         //===============================================================
-
+/*
+*/
         void Delete(T arg)
         {
 
@@ -226,17 +121,16 @@ namespace structures
 
         /*--------------------------------------------
 
-            This version of Find is for use cases
-            where you only want to know weather 
-            the result is in this list and do not
-            want a pointer to it 
+            This version of Find is for cases
+            where you want to see if the value is 
+            in the list and want a handle on that 
+            node to manipulate.
 
-            I guess you could call this a read-only 
-            find?
+            read-write find
 
-        --------------------------------------------*/
+        ---------------------------------------------*/
 
-        bool Find(T arg)
+        bool Find(T arg, SLLNode<T> *out = new SLLNode<T>())
         {
             // arg out of bounds? then return F
 
@@ -249,6 +143,7 @@ namespace structures
 
             if(*start == arg)
             {
+                out = start;
                 return true;
             }
 
@@ -256,75 +151,12 @@ namespace structures
 
             if(*tail == arg)
             {
+                out = tail;
                 return true;
             }
 
-            //------------------------------------------------------------
-            // something is not working right in this half of Find
-            //------------------------------------------------------------
 
-            // cut the list in half for 1 iteration of binary search
 
-            SLLNode<T> *head;
-            SLLNode<T> *end;
-
-            if(size < 5)
-            {
-                head = start;
-                end = tail;
-            }
-            else
-            {
-                if(*middle < arg)
-                {
-                    head = middle;
-                    end = tail;
-                }
-                else
-                {
-                    head = start;
-                    end = middle;
-                }
-            }
-
-            // search from head to end
-
-            BEGIN:
-
-            while(head != end)
-            {
-                if(*head == arg)
-                {
-                    return true;
-                }
-                else
-                {
-                    head = &head->Next();
-                    goto BEGIN;
-                }
-            }
-
-            // if execution comes to here then the value was not 
-            // found in the appropriate half of the list.
-
-            return false;
-        }
-
-        //==============================================================
-
-        /*--------------------------------------------
-
-            This version of Find is for cases
-            where you want to see if the value is 
-            in the list and want a handle on that 
-            node to manipulate.
-
-            read-write find
-
-        ---------------------------------------------*/
-
-        bool Find(T arg, SLLNode<T> *out)
-        {
             return false;
         }
     };
