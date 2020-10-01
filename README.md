@@ -1,2 +1,2 @@
-# structures
-Data Structures incl Lists, Trees, Queues and Stacks
+# data_structures
+Data Structures inclusive of Linked lists, Trees, Queues and Stacks.
