@@ -11,9 +11,9 @@ cmake_policy (SET CMP0079 NEW)
 find_package(Catch2 REQUIRED)
 
 add_executable(structures_unit_test
-                test/testrunner.cpp
-                test/SLLNodeTest.cpp
-                test/SLLTest.cpp)
+                test/src/testrunner.cpp
+                test/src/SLLNodeTest.cpp
+                test/src/SLLTest.cpp)
 
 target_link_libraries(structures_unit_test Catch2::Catch2)
 

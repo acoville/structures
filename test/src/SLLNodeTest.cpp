@@ -1,5 +1,5 @@
-#include "include/catch.hpp"
-#include "../SLLNode.hpp"
+#include "../include/catch.hpp"
+#include "../../src/include/SLLNode.hpp"
 
 
 

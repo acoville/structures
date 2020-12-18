@@ -5,8 +5,8 @@
 
 ==============================================================*/
 
-#include "include/catch.hpp"
-#include "../SLinkedList.hpp"
+#include "../include/catch.hpp"
+#include "../../src/include/SLinkedList.hpp"
 
 namespace structures::test
 {
