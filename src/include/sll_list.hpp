@@ -55,6 +55,13 @@ namespace structures
 
             //===============================================================
 
+            int Size() const
+            {
+                return size;
+            }
+
+            //===============================================================
+
             // on any given insert, tail will currently 
             // be pointing to the present end of the list. 
 
@@ -74,10 +81,11 @@ namespace structures
                 if(size == 1)
                 {
                     head = new list_node<T>(arg);
+                    tail = head;
                 }
 
                 //---------------------------------------------
-                // on any but the first insert, tail is going to change.
+                // if size == 2 or more, only move tail.
                 
                 if(size > 1)
                 {
@@ -88,9 +96,6 @@ namespace structures
 
             //===============================================================
 
-            //list();
-            /*
-           
             ~list()
             {
                 if(head != NULL)
@@ -98,7 +103,6 @@ namespace structures
                     delete head;
                 }
             }
-            */
     };
 }
 
