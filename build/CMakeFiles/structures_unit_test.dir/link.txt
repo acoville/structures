@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/structures_unit_test.dir/test/src/testrunner.cpp.o CMakeFiles/structures_unit_test.dir/test/src/SLLNodeTest.cpp.o CMakeFiles/structures_unit_test.dir/test/src/SLLTest.cpp.o  -o structures_unit_test 
+/usr/bin/c++  -g   CMakeFiles/structures_unit_test.dir/test/src/list_test.cpp.o CMakeFiles/structures_unit_test.dir/test/src/testrunner.cpp.o  -o structures_unit_test 

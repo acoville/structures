@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/structures_unit_test.dir/test/src/SLLNodeTest.cpp.o"
-  "CMakeFiles/structures_unit_test.dir/test/src/SLLTest.cpp.o"
+  "CMakeFiles/structures_unit_test.dir/test/src/list_test.cpp.o"
   "CMakeFiles/structures_unit_test.dir/test/src/testrunner.cpp.o"
   "structures_unit_test"
   "structures_unit_test.pdb"

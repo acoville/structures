@@ -498,59 +498,32 @@ ContinuousSubmit/fast:
 	$(MAKE) -f CMakeFiles/ContinuousSubmit.dir/build.make CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
-test/src/SLLNodeTest.o: test/src/SLLNodeTest.cpp.o
+test/src/list_test.o: test/src/list_test.cpp.o
 
-.PHONY : test/src/SLLNodeTest.o
-
-# target to build an object file
-test/src/SLLNodeTest.cpp.o:
-	$(MAKE) -f CMakeFiles/structures_unit_test.dir/build.make CMakeFiles/structures_unit_test.dir/test/src/SLLNodeTest.cpp.o
-.PHONY : test/src/SLLNodeTest.cpp.o
-
-test/src/SLLNodeTest.i: test/src/SLLNodeTest.cpp.i
-
-.PHONY : test/src/SLLNodeTest.i
-
-# target to preprocess a source file
-test/src/SLLNodeTest.cpp.i:
-	$(MAKE) -f CMakeFiles/structures_unit_test.dir/build.make CMakeFiles/structures_unit_test.dir/test/src/SLLNodeTest.cpp.i
-.PHONY : test/src/SLLNodeTest.cpp.i
-
-test/src/SLLNodeTest.s: test/src/SLLNodeTest.cpp.s
-
-.PHONY : test/src/SLLNodeTest.s
-
-# target to generate assembly for a file
-test/src/SLLNodeTest.cpp.s:
-	$(MAKE) -f CMakeFiles/structures_unit_test.dir/build.make CMakeFiles/structures_unit_test.dir/test/src/SLLNodeTest.cpp.s
-.PHONY : test/src/SLLNodeTest.cpp.s
-
-test/src/SLLTest.o: test/src/SLLTest.cpp.o
-
-.PHONY : test/src/SLLTest.o
+.PHONY : test/src/list_test.o
 
 # target to build an object file
-test/src/SLLTest.cpp.o:
-	$(MAKE) -f CMakeFiles/structures_unit_test.dir/build.make CMakeFiles/structures_unit_test.dir/test/src/SLLTest.cpp.o
-.PHONY : test/src/SLLTest.cpp.o
+test/src/list_test.cpp.o:
+	$(MAKE) -f CMakeFiles/structures_unit_test.dir/build.make CMakeFiles/structures_unit_test.dir/test/src/list_test.cpp.o
+.PHONY : test/src/list_test.cpp.o
 
-test/src/SLLTest.i: test/src/SLLTest.cpp.i
+test/src/list_test.i: test/src/list_test.cpp.i
 
-.PHONY : test/src/SLLTest.i
+.PHONY : test/src/list_test.i
 
 # target to preprocess a source file
-test/src/SLLTest.cpp.i:
-	$(MAKE) -f CMakeFiles/structures_unit_test.dir/build.make CMakeFiles/structures_unit_test.dir/test/src/SLLTest.cpp.i
-.PHONY : test/src/SLLTest.cpp.i
+test/src/list_test.cpp.i:
+	$(MAKE) -f CMakeFiles/structures_unit_test.dir/build.make CMakeFiles/structures_unit_test.dir/test/src/list_test.cpp.i
+.PHONY : test/src/list_test.cpp.i
 
-test/src/SLLTest.s: test/src/SLLTest.cpp.s
+test/src/list_test.s: test/src/list_test.cpp.s
 
-.PHONY : test/src/SLLTest.s
+.PHONY : test/src/list_test.s
 
 # target to generate assembly for a file
-test/src/SLLTest.cpp.s:
-	$(MAKE) -f CMakeFiles/structures_unit_test.dir/build.make CMakeFiles/structures_unit_test.dir/test/src/SLLTest.cpp.s
-.PHONY : test/src/SLLTest.cpp.s
+test/src/list_test.cpp.s:
+	$(MAKE) -f CMakeFiles/structures_unit_test.dir/build.make CMakeFiles/structures_unit_test.dir/test/src/list_test.cpp.s
+.PHONY : test/src/list_test.cpp.s
 
 test/src/testrunner.o: test/src/testrunner.cpp.o
 
@@ -617,12 +590,9 @@ help:
 	@echo "... ContinuousMemCheck"
 	@echo "... ContinuousTest"
 	@echo "... ContinuousSubmit"
-	@echo "... test/src/SLLNodeTest.o"
-	@echo "... test/src/SLLNodeTest.i"
-	@echo "... test/src/SLLNodeTest.s"
-	@echo "... test/src/SLLTest.o"
-	@echo "... test/src/SLLTest.i"
-	@echo "... test/src/SLLTest.s"
+	@echo "... test/src/list_test.o"
+	@echo "... test/src/list_test.i"
+	@echo "... test/src/list_test.s"
 	@echo "... test/src/testrunner.o"
 	@echo "... test/src/testrunner.i"
 	@echo "... test/src/testrunner.s"

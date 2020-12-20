@@ -1,17 +1,12 @@
 [
 {
   "directory": "/home/acoville/Desktop/structures/build",
+  "command": "/usr/bin/c++    -g   -Wall -Wextra -g -std=c++1z -o CMakeFiles/structures_unit_test.dir/test/src/list_test.cpp.o -c /home/acoville/Desktop/structures/test/src/list_test.cpp",
+  "file": "/home/acoville/Desktop/structures/test/src/list_test.cpp"
+},
+{
+  "directory": "/home/acoville/Desktop/structures/build",
   "command": "/usr/bin/c++    -g   -Wall -Wextra -g -std=c++1z -o CMakeFiles/structures_unit_test.dir/test/src/testrunner.cpp.o -c /home/acoville/Desktop/structures/test/src/testrunner.cpp",
   "file": "/home/acoville/Desktop/structures/test/src/testrunner.cpp"
-},
-{
-  "directory": "/home/acoville/Desktop/structures/build",
-  "command": "/usr/bin/c++    -g   -Wall -Wextra -g -std=c++1z -o CMakeFiles/structures_unit_test.dir/test/src/SLLNodeTest.cpp.o -c /home/acoville/Desktop/structures/test/src/SLLNodeTest.cpp",
-  "file": "/home/acoville/Desktop/structures/test/src/SLLNodeTest.cpp"
-},
-{
-  "directory": "/home/acoville/Desktop/structures/build",
-  "command": "/usr/bin/c++    -g   -Wall -Wextra -g -std=c++1z -o CMakeFiles/structures_unit_test.dir/test/src/SLLTest.cpp.o -c /home/acoville/Desktop/structures/test/src/SLLTest.cpp",
-  "file": "/home/acoville/Desktop/structures/test/src/SLLTest.cpp"
 }
 ]
